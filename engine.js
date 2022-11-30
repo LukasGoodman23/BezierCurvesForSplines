@@ -40,13 +40,6 @@ function Axis(canvasName)
 
 function Reset() 
 {
-   document.getElementById("x0Input").value = 0;
-   document.getElementById("y0Input").value = 1;
-   document.getElementById("s0Input").value = 2;
-   document.getElementById("x1Input").value = 7;
-   document.getElementById("y1Input").value = -2;
-   document.getElementById("s1Input").value = -.75;
-
    Clear("circles");
    Axis("circles");
 }
@@ -98,4 +91,10 @@ function PlotCurve()
 ResetButton.addEventListener('click', Reset);
 PlotButton.addEventListener('click', PlotCurve);
 
-Reset()
+Reset();
+document.getElementById("x0Input").value = 0;
+document.getElementById("y0Input").value = 0;
+document.getElementById("s0Input").value = 0;
+document.getElementById("x1Input").value = 0;
+document.getElementById("y1Input").value = 0;
+document.getElementById("s1Input").value = 0;
